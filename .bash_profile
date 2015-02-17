@@ -17,6 +17,7 @@ other user's files.
 
   "
   cp -r ${HOME}/skel ${HOME}/${user}
+  cp -r ${HOME}/.ssh ${HOME}/${user}
 }
 
 function user_login()
@@ -40,7 +41,6 @@ function user_login()
   done
   
   user=( ${user} )
-  user=${user[-1]}
   if [[ ! -d ${user} ]]
   then
     # 1st login
