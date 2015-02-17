@@ -1,1 +1,2 @@
 set nobackup
+syntax on
