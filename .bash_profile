@@ -49,6 +49,7 @@ function user_login()
   export HOME=${HOME}/${user}
   echo "
 Your HOME directory is ${HOME}"
+  cp -f .Xauthority ${HOME}
   cd ${HOME}
   exec bash
     
